@@ -1,0 +1,30 @@
+.Film-title {
+  font-weight: bold;
+}
+
+.Content-director-name {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.Director-name {
+  font-weight: bold !important;
+  margin-right: 5px !important;
+}
+
+.Chip-style {
+  margin: 3px;
+}
+
+.Content-film-section {
+  margin-top: 15px !important;
+  padding: 20px;
+}
+
+.Content-data {
+  margin-bottom: 15px;
+}
+
+.Avatar-Color {
+  background-color: #282c34 !important;
+}
