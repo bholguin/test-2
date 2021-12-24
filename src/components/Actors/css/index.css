@@ -9,19 +9,18 @@
 }
 
 .Content-title {
-  padding: 20px;
-  padding-bottom: 30px;
+  padding-top: 15px;
   position: relative;
-  margin-bottom: 15px;
+  width: 230px;
+  margin: 0 auto;
 }
 
 .Content-title > h2 {
-  position: absolute;
-  bottom: -25px;
-  right: 20px;
   font-family: "Outfit";
   font-weight: bold;
   font-size: 30px;
+  margin: 0;
+  text-align: end;
 }
 
 .character-name {
@@ -34,4 +33,24 @@
 
 .Loading-style {
   width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #282c34;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+}
+
+.main {
+  margin-top: 200px;
 }

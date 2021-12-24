@@ -14,33 +14,40 @@ const Actors: FC = (): JSX.Element => {
             <Backdrop open={loading} >
                 <CircularProgress color="inherit" />
             </Backdrop>
-            <div className="Content-title">
-                <img src={ImgStartWars} alt='' className="Style-img" />
-                <h2>
-                    Actors
-                </h2>
+            <div className="header">
+                <div className="Content-title">
+                    <img src={ImgStartWars} alt='' className="Style-img" />
+                    <h2>
+                        Actors
+                    </h2>
+                </div>
             </div>
-            {<Grid container
-                spacing={2}
-                alignItems="center"
-                justifyContent="center" >
-                {
-                    data && data.allPeople.people.map((item: IPerson, index: number) => {
-                        return (
-                            <Grid item key={index}>
-                                <Card sx={{ minWidth: 345 }}>
-                                    <CardContent className="character-name">
-                                        {item.name}
-                                    </CardContent>
-                                    <CardActions>
-                                        <Button onClick={() => goToDetail(item.id)}>View more</Button>
-                                    </CardActions>
-                                </Card>
-                            </Grid>
-                        )
-                    })
-                }
-            </Grid>}
+
+            <div className="main">
+                <Grid
+                    container
+                    spacing={2}
+                    alignItems="center"
+                    justifyContent="center" >
+                    {
+                        data && data.allPeople.people.map((item: IPerson, index: number) => {
+                            return (
+                                <Grid item key={index}>
+                                    <Card sx={{ minWidth: 345 }}>
+                                        <CardContent className="character-name">
+                                            {item.name}
+                                        </CardContent>
+                                        <CardActions>
+                                            <Button onClick={() => goToDetail(item.id)}>View more</Button>
+                                        </CardActions>
+                                    </Card>
+                                </Grid>
+                            )
+                        })
+                    }
+                </Grid>
+            </div>
+
             <Detail />
         </div>
 
