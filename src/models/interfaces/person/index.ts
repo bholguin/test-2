@@ -1,5 +1,6 @@
 import { IFilm } from "../film";
 import { IPlanet } from "../planet";
+
 export interface IPerson {
   id: string;
   birthYear?: string;
@@ -12,4 +13,10 @@ export interface IPerson {
   name?: string;
   skinColor?: string;
   species?: { __typename: string; name: string };
+}
+
+
+export interface IPeople{
+  person: IPerson,
+  list: Array<IPerson>
 }

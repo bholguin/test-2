@@ -1,4 +1,4 @@
-import useQueryPersons from "./Persons";
+import useQueryPersons from "./People";
 import useQueryFilms from "./Films";
 const useQueryString = () => {
   return {

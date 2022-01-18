@@ -33,8 +33,8 @@ import StarsIcon from '@mui/icons-material/Stars';
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 import { useDetail } from "./hook";
-import { IFilm } from "../../models/film";
-import { IPlanet } from "../../models/planet";
+import { IFilm } from "../../models/interfaces/film";
+import { IPlanet } from "../../models/interfaces/planet";
 import './css/index.css'
 
 const Transition = forwardRef(function Transition(

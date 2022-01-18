@@ -4,7 +4,7 @@ import './css/index.css'
 import Detail from "../Detail";
 import { useActors } from "./hook"
 import ImgStartWars from '../../assets/img/Star_Wars_Yellow_Logo.svg.png'
-import { IPerson } from "../../models/person";
+import { IPerson } from "../../models/interfaces/person";
 
 const Actors: FC = (): JSX.Element => {
     const { data, goToDetail, loading } = useActors()

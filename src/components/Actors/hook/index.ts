@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import useQueryString from "../../../query";
+import useQueryString from "../../../api/query";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 export const useActors = () => {
